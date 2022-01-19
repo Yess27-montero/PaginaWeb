@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Krub:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*manejar el elemento*/
+    font-size: 62.5%;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Krub', sans-serif;
+    color: white;
+
+}
+
+h1 {
+    font-size: 3.6rem;
+  }
+  
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+      url('https://papelmatic.com/wp-content/uploads/2019/09/papelmatic-higiene-profesional-limpieza-desinfeccion-clinicas-veterinarias-1080x675.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+  }
+  
+  ul {
+    list-style: none;
+    padding-top: 2rem;
+  }
+  
+  li {
+    display: inline;
+    margin-left: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+  .logo h1{
+    color: turquoise;
+  }
+  a:hover{
+      color: turquoise;
+      
+  }
+
+  .icono-menu{
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px){
+    .icono-menu{
+      display: block;
+      position: absolute;
+      right: 36px;
+      top: 26px;
+    }
+    nav{
+      flex-direction: column;
+    }
+
+    nav ul{
+      background-color:teal ;
+      display: none;
+    }
+
+    .mostrar{
+      display: block;
+    }
+    nav ul il{
+      display: block;
+      padding: 1% 0%;
+    }
+
+    nav ul li a{
+      color: black;
+    }
+  }
+
+  
